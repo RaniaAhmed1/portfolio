@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rania Ahmed - Junior Flutter Developer & Computer Science Student at Assiut University. Building clean, responsive, and user-friendly mobile interfaces.">
+  <meta name="author" content="Rania Ahmed">
+  <meta name="theme-color" content="#111318">
+
+  <title>Rania Ahmed | Junior Flutter Developer</title>
+
+  <!-- Google Fonts: Inter & Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Skip to Content for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <a href="#home" class="logo" aria-label="Rania Ahmed Home">
+        <span class="logo-bracket">&lt;</span><span class="logo-name">RA</span><span class="logo-bracket">/&gt;</span>
+        <span class="logo-badge">Flutter</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Controls: Theme Toggle & Mobile Menu Button -->
+      <div class="header-actions">
+        <button id="theme-toggle" class="icon-btn theme-toggle" type="button" aria-label="Toggle light/dark theme" title="Toggle theme">
+          <!-- Sun Icon (shown in dark theme) -->
+          <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (shown in light theme) -->
+          <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-sm btn-outline header-cta-desktop">Hire Me</a>
+
+        <button id="mobile-menu-toggle" class="icon-btn mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-nav" class="mobile-nav-drawer" aria-hidden="true">
+      <div class="mobile-nav-backdrop"></div>
+      <div class="mobile-nav-content">
+        <div class="mobile-nav-header">
+          <span class="logo-small">&lt;RA/&gt; Navigation</span>
+          <button id="mobile-menu-close" class="icon-btn close-btn" type="button" aria-label="Close navigation menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <ul class="mobile-nav-links">
+          <li><a href="#home" class="mobile-nav-link">Home</a></li>
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+          <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+          <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+          <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+          <li><a href="#services" class="mobile-nav-link">Services</a></li>
+          <li><a href="#education" class="mobile-nav-link">Education</a></li>
+          <li><a href="#approach" class="mobile-nav-link">My Approach</a></li>
+          <li><a href="#objective" class="mobile-nav-link">Career Goal</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+          <a href="#contact" class="btn btn-primary btn-block">Let's Connect</a>
+          <div class="mobile-socials">
+            <a href="https://github.com/RaniaAhmed1" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/rania-ahmed-cs" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            </a>
+            <a href="mailto:raniaezzat135@gmail.com" aria-label="Email Rania Ahmed">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="container hero-container">
+        <!-- Hero Text Column -->
+        <div class="hero-content reveal">
+          <div class="hero-badge">
+            <span class="status-dot"></span>
+            <span>Junior Flutter Developer · Assiut University</span>
+          </div>
+
+          <h1 class="hero-name">
+            Rania Ahmed
+          </h1>
+
+          <h2 class="hero-tagline">
+            Turning Ideas into <span class="gradient-text">Mobile Experiences.</span>
+          </h2>
+
+          <p class="hero-subtitle">
+            I build clean, responsive, and user-friendly mobile interfaces using Flutter, bringing designs to life with care and attention to detail.
+          </p>
+
+          <!-- Core Focus Tags -->
+          <div class="hero-tags">
+            <span class="tag"><svg class="tag-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M14.314 0L2.3 12 6 15.7 21.684.013h-7.37zM6.027 15.686L10.3 20l7.357-7.357-3.7-3.7-7.93 6.743z"/></svg> Flutter Development</span>
+            <span class="tag"><svg class="tag-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a4 4 0 0 0-4 4c0 1.11.45 2.11 1.17 2.83A4 4 0 0 0 8 12a4 4 0 0 0 4 4 4 4 0 0 0 4-4c0-1.11-.45-2.11-1.17-2.83A4 4 0 0 0 16 6a4 4 0 0 0-4-4z"/></svg> Figma to Flutter</span>
+            <span class="tag"><svg class="tag-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg> Mobile UI Implementation</span>
+          </div>
+
+          <!-- Hero Actions -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore My Work</span>
+              <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Let's Connect</span>
+            </a>
+          </div>
+
+          <!-- Social Quick Links -->
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <a href="https://github.com/RaniaAhmed1" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/rania-ahmed-cs" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:raniaezzat135@gmail.com" class="social-link" aria-label="Direct Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual Column: Flutter Mobile UI Mockup -->
+        <div class="hero-visual reveal reveal-delay-1">
+          <div class="phone-mockup-wrapper">
+            <div class="ambient-glow"></div>
+            
+            <!-- Flutter Mobile Device Mockup -->
+            <div class="phone-frame">
+              <div class="phone-notch">
+                <span class="camera-dot"></span>
+                <span class="speaker-bar"></span>
+              </div>
+              
+              <!-- Screen Content: Interactive/Polished Flutter UI Preview -->
+              <div class="phone-screen">
+                <!-- App Status Bar -->
+                <div class="screen-status-bar">
+                  <span class="status-time">9:41</span>
+                  <div class="status-icons">
+                    <span class="signal-bars"></span>
+                    <span class="battery-icon"></span>
+                  </div>
+                </div>
+
+                <!-- Flutter App Header -->
+                <div class="app-header">
+                  <div>
+                    <span class="app-greeting">Welcome back,</span>
+                    <h2 class="app-user-title">Flutter Explorer</h2>
+                  </div>
+                  <div class="app-avatar">
+                    <span>RA</span>
+                  </div>
+                </div>
+
+                <!-- App Search Bar (UI Component) -->
+                <div class="app-search-bar">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                  <span>Search widgets, modules...</span>
+                </div>
+
+                <!-- App Category Pills -->
+                <div class="app-categories">
+                  <span class="app-pill active">UI Screens</span>
+                  <span class="app-pill">Figma</span>
+                  <span class="app-pill">APIs</span>
+                </div>
+
+                <!-- App Featured Card -->
+                <div class="app-card-featured">
+                  <div class="app-card-tag">Flutter 3.x</div>
+                  <h3 class="app-card-heading">Responsive Architecture</h3>
+                  <p class="app-card-sub">Pixel-perfect Flutter layouts crafted from Figma designs.</p>
+                  <div class="app-card-footer">
+                    <span class="badge-mini">Dart</span>
+                    <span class="badge-mini">Provider</span>
+                    <span class="badge-mini-accent">Live UI</span>
+                  </div>
+                </div>
+
+                <!-- App Stats/Features Row -->
+                <div class="app-grid-row">
+                  <div class="app-stat-box">
+                    <div class="stat-icon-wrapper">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                    </div>
+                    <span class="stat-number">Clean</span>
+                    <span class="stat-label">Widgets</span>
+                  </div>
+                  <div class="app-stat-box">
+                    <div class="stat-icon-wrapper accent">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    </div>
+                    <span class="stat-number">Smooth</span>
+                    <span class="stat-label">Flows</span>
+                  </div>
+                </div>
+
+                <!-- App Bottom Navigation Mockup -->
+                <div class="app-bottom-nav">
+                  <div class="app-nav-item active">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                  </div>
+                  <div class="app-nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                  </div>
+                  <div class="app-nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Widget Badges for aesthetic depth -->
+            <div class="floating-badge badge-top-right">
+              <span class="flutter-blue-dot"></span>
+              <span>Dart & Flutter</span>
+            </div>
+            <div class="floating-badge badge-bottom-left">
+              <span class="mint-green-dot"></span>
+              <span>Figma &rarr; Flutter</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Passionate About Crafting Seamless Mobile Interfaces</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Biography & Mindset -->
+          <div class="about-bio reveal">
+            <p class="lead-text">
+              Hi, I'm <strong class="text-highlight">Rania Ahmed</strong>, a Junior Flutter Developer and a third-year Computers &amp; Information student at Assiut University.
+            </p>
+            <p>
+              I'm passionate about building mobile applications that combine thoughtful design with a smooth user experience. I enjoy transforming UI designs into responsive Flutter interfaces and turning ideas into practical, easy-to-use applications.
+            </p>
+            <p>
+              Through my Flutter training and hands-on projects, I've been developing my skills in Dart, API integration, navigation, state management, and UI implementation.
+            </p>
+            <p>
+              I believe that a great mobile experience starts with understanding the design, caring about the details, and continuously learning how to build better solutions.
+            </p>
+            <p class="highlight-callout">
+              I'm looking forward to collaborating with startups, small businesses, and designers to bring their mobile app ideas to life.
+            </p>
+
+            <!-- Key Strengths / Pillars -->
+            <div class="about-highlights-grid">
+              <div class="highlight-card">
+                <div class="highlight-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                </div>
+                <div>
+                  <h4 class="highlight-title">Flutter-Focused</h4>
+                  <p class="highlight-desc">Dedicated to cross-platform mobile development with Dart.</p>
+                </div>
+              </div>
+
+              <div class="highlight-card">
+                <div class="highlight-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                </div>
+                <div>
+                  <h4 class="highlight-title">Figma to Flutter</h4>
+                  <p class="highlight-desc">Accurate implementation of layouts, spacing, and typography.</p>
+                </div>
+              </div>
+
+              <div class="highlight-card">
+                <div class="highlight-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                </div>
+                <div>
+                  <h4 class="highlight-title">Hands-on Learning</h4>
+                  <p class="highlight-desc">Intensive training with DEPI and ITI programs.</p>
+                </div>
+              </div>
+
+              <div class="highlight-card">
+                <div class="highlight-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                </div>
+                <div>
+                  <h4 class="highlight-title">Continuous Improvement</h4>
+                  <p class="highlight-desc">Regular coding practice and algorithmic problem solving.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Code Profile Card & Details -->
+          <div class="about-card-col reveal reveal-delay-1">
+            <div class="developer-code-card">
+              <div class="card-terminal-header">
+                <div class="terminal-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <span class="terminal-title">rania_ahmed.dart</span>
+              </div>
+              <div class="card-terminal-body">
+                <pre><code><span class="code-keyword">class</span> <span class="code-class">RaniaAhmed</span> <span class="code-keyword">extends</span> <span class="code-class">FlutterDeveloper</span> {
+  <span class="code-keyword">final</span> String name = <span class="code-string">'Rania Ahmed'</span>;
+  <span class="code-keyword">final</span> String role = <span class="code-string">'Junior Flutter Developer'</span>;
+  <span class="code-keyword">final</span> String university = <span class="code-string">'Assiut University'</span>;
+  <span class="code-keyword">final</span> String faculty = <span class="code-string">'Computers &amp; Information'</span>;
+  <span class="code-keyword">final</span> int academicYear = <span class="code-number">3</span>;
+
+  <span class="code-keyword">final</span> List&lt;String&gt; currentTraining = [
+    <span class="code-string">'DEPI Flutter Track'</span>,
+    <span class="code-string">'ITI Flutter Cross-Platform (Completed)'</span>,
+  ];
+
+  <span class="code-keyword">final</span> List&lt;String&gt; coreStrengths = [
+    <span class="code-string">'Figma to Flutter'</span>,
+    <span class="code-string">'Responsive Mobile UI'</span>,
+    <span class="code-string">'REST API Integration'</span>,
+    <span class="code-string">'Provider State Management'</span>,
+  ];
+
+  <span class="code-keyword">bool</span> isReadyForProjects() =&gt; <span class="code-keyword">true</span>;
+}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Technical Skills</span>
+          <h2 class="section-title">My Technical Toolkit &amp; Learning Areas</h2>
+          <p class="section-subtitle">
+            Current skills, technologies, and practical tools I utilize in developing responsive mobile applications.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Card 1: Mobile App Development -->
+          <article class="skill-category-card reveal">
+            <div class="skill-card-header">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Mobile App Development</h3>
+            </div>
+            <p class="skill-cat-desc">Core technologies and concepts for building cross-platform mobile experiences.</p>
+            <ul class="skill-badge-list">
+              <li class="skill-badge">Flutter</li>
+              <li class="skill-badge">Dart</li>
+              <li class="skill-badge">Responsive UI Development</li>
+              <li class="skill-badge">Mobile Navigation</li>
+            </ul>
+          </article>
+
+          <!-- Skill Card 2: UI Implementation -->
+          <article class="skill-category-card reveal reveal-delay-1">
+            <div class="skill-card-header">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 2a4 4 0 0 0-4 4c0 1.11.45 2.11 1.17 2.83A4 4 0 0 0 8 12a4 4 0 0 0 4 4 4 4 0 0 0 4-4c0-1.11-.45-2.11-1.17-2.83A4 4 0 0 0 16 6a4 4 0 0 0-4-4z"/>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">UI Implementation</h3>
+            </div>
+            <p class="skill-cat-desc">Translating visual designs and mockups into pixel-consistent Flutter widgets.</p>
+            <ul class="skill-badge-list">
+              <li class="skill-badge">Figma to Flutter</li>
+              <li class="skill-badge">Responsive Layouts</li>
+              <li class="skill-badge">Reusable Widgets</li>
+              <li class="skill-badge">Mobile Screen Implementation</li>
+            </ul>
+          </article>
+
+          <!-- Skill Card 3: Data & Integration -->
+          <article class="skill-category-card reveal reveal-delay-2">
+            <div class="skill-card-header">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Data &amp; Integration</h3>
+            </div>
+            <p class="skill-cat-desc">Connecting interfaces to external resources, data sources, and multimedia.</p>
+            <ul class="skill-badge-list">
+              <li class="skill-badge">REST API Integration</li>
+              <li class="skill-badge">JSON Serialization</li>
+              <li class="skill-badge">Audio Playback</li>
+            </ul>
+          </article>
+
+          <!-- Skill Card 4: Application Logic -->
+          <article class="skill-category-card reveal">
+            <div class="skill-card-header">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Application Logic</h3>
+            </div>
+            <p class="skill-cat-desc">Handling state, user inputs, validation, and reactive interface updates.</p>
+            <ul class="skill-badge-list">
+              <li class="skill-badge">Forms &amp; Validation</li>
+              <li class="skill-badge">State Management</li>
+              <li class="skill-badge">Provider</li>
+            </ul>
+          </article>
+
+          <!-- Skill Card 5: Development Tools -->
+          <article class="skill-category-card reveal reveal-delay-1">
+            <div class="skill-card-header">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Development Tools</h3>
+            </div>
+            <p class="skill-cat-desc">Tools and workflows for clean version control and productive coding.</p>
+            <ul class="skill-badge-list">
+              <li class="skill-badge">Visual Studio Code</li>
+              <li class="skill-badge">Git</li>
+              <li class="skill-badge">GitHub</li>
+            </ul>
+          </article>
+
+          <!-- Growth & Learning Mindset Card -->
+          <article class="skill-category-card skill-card-highlight reveal reveal-delay-2">
+            <div class="skill-card-header">
+              <div class="skill-icon-box accent">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                </svg>
+              </div>
+              <h3 class="skill-cat-title">Continuous Growth</h3>
+            </div>
+            <p class="skill-cat-desc">
+              Dedicated to hands-on practice, deepening understanding of clean Flutter architecture, and learning modern mobile patterns.
+            </p>
+            <div class="growth-meta">
+              <span class="growth-tag">Curious &amp; Detail-Oriented</span>
+              <span class="growth-tag">Active Problem Solver</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Practical Flutter Projects</h2>
+          <p class="section-subtitle">
+            Real applications showcasing my hands-on practice in mobile UI, state management, and training collaborations.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- PROJECT 1: Kids' English Learning App -->
+          <article class="project-card reveal">
+            <!-- Project Visual Container -->
+            <div class="project-visual project-visual-warm">
+              <div class="project-mockup-screen">
+                <div class="mockup-header-bar">
+                  <span class="mockup-pill-category">Animals · Vocabulary</span>
+                  <span class="mockup-audio-indicator" title="Audio Supported">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                  </span>
+                </div>
+                <div class="mockup-vocab-card">
+                  <div class="vocab-emoji">🦁</div>
+                  <div class="vocab-word">Lion</div>
+                  <div class="vocab-translation">أسد (Asad)</div>
+                  <div class="vocab-play-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    <span>Tap to Listen</span>
+                  </div>
+                </div>
+                <div class="mockup-vocab-nav">
+                  <span class="vocab-dot active"></span>
+                  <span class="vocab-dot"></span>
+                  <span class="vocab-dot"></span>
+                  <span class="vocab-dot"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Content -->
+            <div class="project-content">
+              <div class="project-meta-top">
+                <span class="project-type-badge">Personal Project</span>
+                <span class="project-status-badge status-completed">Completed</span>
+              </div>
+
+              <h3 class="project-title">Kids' English Learning App</h3>
+
+              <p class="project-description">
+                A children's English-learning mobile application designed to introduce young learners to everyday English vocabulary through illustrated categories and native audio pronunciation.
+              </p>
+
+              <!-- Key Features List -->
+              <div class="project-features">
+                <h4 class="features-label">Key Features Implemented:</h4>
+                <ul class="features-list">
+                  <li>Splash screen and smooth onboarding flow</li>
+                  <li>Vocabulary categories (animals, food, family, clothes, numbers, colors)</li>
+                  <li>English vocabulary paired with Arabic translations</li>
+                  <li>Interactive audio playback for vocabulary pronunciation</li>
+                </ul>
+              </div>
+
+              <!-- Technology Tags -->
+              <div class="project-tags">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">Mobile UI</span>
+                <span class="tech-tag">Audio Playback</span>
+                <span class="tech-tag">Educational App</span>
+              </div>
+
+              <!-- Project Links / Honest Status -->
+              <div class="project-actions">
+                <div class="project-info-note">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                  <span>Repository URL will be linked once published.</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: DEPI Graduation Project -->
+          <article class="project-card reveal reveal-delay-1">
+            <!-- Project Visual Container -->
+            <div class="project-visual project-visual-cool">
+              <div class="project-mockup-screen">
+                <div class="mockup-header-bar">
+                  <span class="mockup-pill-category">DEPI EdTech · Dashboard</span>
+                  <span class="in-progress-pulse">In Progress</span>
+                </div>
+                <div class="mockup-edu-card">
+                  <div class="edu-card-top">
+                    <div class="edu-avatar-mini">🎓</div>
+                    <div>
+                      <div class="edu-role-badge">Student Portal</div>
+                      <div class="edu-name">Course Overview</div>
+                    </div>
+                  </div>
+                  <div class="edu-progress-bar-wrap">
+                    <div class="edu-progress-text">
+                      <span>Module Progress</span>
+                      <span>75%</span>
+                    </div>
+                    <div class="edu-progress-track">
+                      <div class="edu-progress-fill" style="width: 75%;"></div>
+                    </div>
+                  </div>
+                  <div class="edu-tags-row">
+                    <span class="edu-tag">Assignments</span>
+                    <span class="edu-tag">Lessons</span>
+                    <span class="edu-tag">Quizzes</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Content -->
+            <div class="project-content">
+              <div class="project-meta-top">
+                <span class="project-type-badge">Team Graduation Project</span>
+                <span class="project-status-badge status-progress">In Progress</span>
+              </div>
+
+              <h3 class="project-title">DEPI Graduation Project — Educational App</h3>
+
+              <div class="program-affiliation">
+                <strong>Program:</strong> Digital Egypt Pioneers Initiative (DEPI)
+              </div>
+
+              <p class="project-description">
+                A collaborative educational application for students and teachers, developed as part of the DEPI Flutter Cross-Platform Development track. The app focuses on structured learning workflows, classroom interaction, and clean mobile interfaces.
+              </p>
+
+              <!-- Key Features List -->
+              <div class="project-features">
+                <h4 class="features-label">Project Scope:</h4>
+                <ul class="features-list">
+                  <li>Collaborative cross-platform mobile app development</li>
+                  <li>Tailored workflows for students and teachers</li>
+                  <li>Part of ongoing DEPI Flutter Cross-Platform training</li>
+                  <li>Focus on responsive layouts, clean code, and team coordination</li>
+                </ul>
+              </div>
+
+              <!-- Technology Tags -->
+              <div class="project-tags">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">Team Collaboration</span>
+                <span class="tech-tag">EdTech</span>
+              </div>
+
+              <!-- Project Links / Honest Status -->
+              <div class="project-actions">
+                <div class="project-info-note">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                  <span>Currently under active development within DEPI.</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & LEARNING JOURNEY SECTION -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Experience &amp; Learning</span>
+          <h2 class="section-title">Training &amp; Development Journey</h2>
+          <p class="section-subtitle">
+            My hands-on technical training, algorithmic practice, and personal Flutter project milestones.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-line"></div>
+
+          <!-- Timeline Item 1: DEPI -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot">
+              <span class="dot-inner dot-active"></span>
+            </div>
+            <article class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <span class="timeline-badge badge-ongoing">Ongoing Training</span>
+                  <h3 class="timeline-title">Digital Egypt Pioneers Initiative (DEPI)</h3>
+                  <div class="timeline-track">Track: Flutter Cross-Platform Development</div>
+                </div>
+              </div>
+              <p class="timeline-desc">
+                Practical training focused on cross-platform mobile application development using Flutter and Dart, alongside continued work on a team graduation project.
+              </p>
+              <div class="timeline-skills">
+                <span class="mini-skill">Flutter</span>
+                <span class="mini-skill">Dart</span>
+                <span class="mini-skill">Team Graduation Project</span>
+                <span class="mini-skill">Mobile UI Patterns</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Timeline Item 2: ITI -->
+          <div class="timeline-item reveal reveal-delay-1">
+            <div class="timeline-dot">
+              <span class="dot-inner dot-completed"></span>
+            </div>
+            <article class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <span class="timeline-badge badge-completed">Completed Training</span>
+                  <h3 class="timeline-title">Information Technology Institute (ITI)</h3>
+                  <div class="timeline-track">Track: Flutter Cross-Platform Development</div>
+                </div>
+              </div>
+              <p class="timeline-desc">
+                Hands-on training focused on Flutter development and building cross-platform mobile applications, with emphasis on widget composition and responsive layouts.
+              </p>
+              <div class="timeline-skills">
+                <span class="mini-skill">Flutter Cross-Platform</span>
+                <span class="mini-skill">Dart OOP</span>
+                <span class="mini-skill">Mobile Architecture</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Timeline Item 3: ICPC Assiut -->
+          <div class="timeline-item reveal reveal-delay-2">
+            <div class="timeline-dot">
+              <span class="dot-inner dot-completed"></span>
+            </div>
+            <article class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <span class="timeline-badge badge-practice">Problem Solving Practice</span>
+                  <h3 class="timeline-title">ICPC Assiut University Community</h3>
+                  <div class="timeline-track">Focus: Problem Solving &amp; Algorithmic Thinking</div>
+                </div>
+              </div>
+              <p class="timeline-desc">
+                Programming practice focused on logical thinking, algorithmic problem solving, and developing structured approaches to programming challenges.
+              </p>
+              <div class="timeline-skills">
+                <span class="mini-skill">Problem Solving</span>
+                <span class="mini-skill">Algorithms</span>
+                <span class="mini-skill">Structured Logic</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Timeline Item 4: Personal Flutter Projects -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot">
+              <span class="dot-inner dot-active"></span>
+            </div>
+            <article class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <span class="timeline-badge badge-ongoing">Continuous Practice</span>
+                  <h3 class="timeline-title">Personal Flutter Projects</h3>
+                  <div class="timeline-track">Focus: Mobile UI Development &amp; Application Features</div>
+                </div>
+              </div>
+              <p class="timeline-desc">
+                Practical project work involving mobile screen implementation, navigation, form validation, API integration, state management with Provider, and audio playback.
+              </p>
+              <div class="timeline-skills">
+                <span class="mini-skill">Figma Translation</span>
+                <span class="mini-skill">Provider State</span>
+                <span class="mini-skill">REST APIs</span>
+                <span class="mini-skill">Audio Features</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="section services-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">What I Offer</span>
+          <h2 class="section-title">Services for Startups &amp; Designers</h2>
+          <p class="section-subtitle">
+            Reliable Flutter development services tailored to startups, designers, and teams needing clean mobile UI implementation.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <article class="service-card reveal">
+            <div class="service-number">01</div>
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="service-title">Figma to Flutter UI Implementation</h3>
+            <p class="service-description">
+              I convert Figma designs into Flutter interfaces, focusing on layout accuracy, spacing, typography, colors, and reusable widgets.
+            </p>
+            <div class="service-footer">
+              <a href="#contact" class="service-cta-link">
+                <span>Discuss This Service</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Service 2 -->
+          <article class="service-card reveal reveal-delay-1">
+            <div class="service-number">02</div>
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Custom Mobile UI Screens</h3>
+            <p class="service-description">
+              I build individual Flutter screens, such as onboarding, login, registration, profile, and category screens, based on project requirements or provided designs.
+            </p>
+            <div class="service-footer">
+              <a href="#contact" class="service-cta-link">
+                <span>Discuss This Service</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Service 3 -->
+          <article class="service-card reveal reveal-delay-2">
+            <div class="service-number">03</div>
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="service-title">Basic REST API Integration</h3>
+            <p class="service-description">
+              I integrate REST API data into Flutter interfaces, handle JSON responses, and display dynamic content according to project requirements.
+            </p>
+            <div class="service-footer">
+              <a href="#contact" class="service-cta-link">
+                <span>Discuss This Service</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Service 4 -->
+          <article class="service-card reveal">
+            <div class="service-number">04</div>
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 20h9"></path>
+                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Interactive Flutter UI Features</h3>
+            <p class="service-description">
+              I implement interface interactions such as screen navigation, form validation, audio playback, and state-driven UI updates.
+            </p>
+            <div class="service-footer">
+              <a href="#contact" class="service-cta-link">
+                <span>Discuss This Service</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Service Callout Banner -->
+        <div class="services-callout reveal">
+          <div class="callout-content">
+            <h3 class="callout-heading">Need a dedicated Junior Flutter Developer for your mobile screens?</h3>
+            <p class="callout-sub">Let's discuss how I can help bring your designs and app ideas to life.</p>
+          </div>
+          <a href="#contact" class="btn btn-primary">Discuss Your Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">
+            Formal university education and computer science fundamentals.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="edu-single-wrapper reveal">
+          <article class="credential-card academic-card-featured">
+            <div class="academic-card-top-row">
+              <div class="academic-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="academic-title-wrap">
+                <div class="card-status-pill">Degree in Progress</div>
+                <h3 class="credential-name">Assiut University</h3>
+                <div class="credential-subtitle">B.Sc. in Computers &amp; Information</div>
+              </div>
+            </div>
+
+            <div class="credential-meta">
+              <span class="meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                Third-Year Student
+              </span>
+              <span class="meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Faculty of Computers &amp; Information · Assiut, Egypt
+              </span>
+            </div>
+
+            <p class="credential-description">
+              Building a solid theoretical and practical foundation in computer science, software engineering principles, algorithms, data structures, and database management.
+            </p>
+
+            <div class="academic-coursework">
+              <span class="coursework-label">Core Academic Foundations:</span>
+              <div class="coursework-tags">
+                <span class="coursework-tag">Data Structures</span>
+                <span class="coursework-tag">Algorithms</span>
+                <span class="coursework-tag">Object-Oriented Programming (OOP)</span>
+                <span class="coursework-tag">Software Engineering</span>
+                <span class="coursework-tag">Database Systems</span>
+                <span class="coursework-tag">Operating Systems</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MY WORKING APPROACH SECTION -->
+    <section id="approach" class="section approach-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">How I Work</span>
+          <h2 class="section-title">My Working Approach</h2>
+          <p class="section-subtitle">
+            The principles that guide my daily coding practice and collaboration on mobile development projects.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="approach-grid">
+          <!-- Pillar 1 -->
+          <article class="approach-card reveal">
+            <div class="approach-step-num">01</div>
+            <div class="approach-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+              </svg>
+            </div>
+            <h3 class="approach-title">Attention to Design</h3>
+            <p class="approach-text">
+              I focus on implementing layouts, spacing, and visual details as closely as possible to the provided design, ensuring consistency across screens.
+            </p>
+          </article>
+
+          <!-- Pillar 2 -->
+          <article class="approach-card reveal reveal-delay-1">
+            <div class="approach-step-num">02</div>
+            <div class="approach-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </div>
+            <h3 class="approach-title">Clear Communication</h3>
+            <p class="approach-text">
+              I value clear requirements, regular updates, and understanding the project scope before starting to keep expectations aligned.
+            </p>
+          </article>
+
+          <!-- Pillar 3 -->
+          <article class="approach-card reveal reveal-delay-2">
+            <div class="approach-step-num">03</div>
+            <div class="approach-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="12" y1="19" x2="12" y2="5"></line>
+                <polyline points="5 12 12 5 19 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="approach-title">Continuous Learning</h3>
+            <p class="approach-text">
+              I keep improving my development skills through training, practical projects, code reviews, and constructive feedback.
+            </p>
+          </article>
+
+          <!-- Pillar 4 -->
+          <article class="approach-card reveal">
+            <div class="approach-step-num">04</div>
+            <div class="approach-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="approach-title">Practical Implementation</h3>
+            <p class="approach-text">
+              I aim to create responsive, maintainable Flutter interfaces that combine visual consistency with useful, bug-free functionality.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAREER OBJECTIVE SECTION -->
+    <section id="objective" class="section objective-section">
+      <div class="container">
+        <div class="objective-card reveal">
+          <div class="objective-badge">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <span>Career Objective</span>
+          </div>
+
+          <blockquote class="objective-statement">
+            "My goal is to grow as a Flutter developer by building practical, user-friendly mobile applications and strengthening my skills in UI implementation, API integration, and application architecture. I aim to contribute to collaborative development teams, support startups and small businesses with their mobile app ideas, and continue developing a portfolio that reflects my progress and technical capabilities."
+          </blockquote>
+
+          <div class="objective-author">
+            <span class="author-name">Rania Ahmed</span>
+            <span class="author-title">Junior Flutter Developer · Third-Year Student, Assiut University</span>
+          </div>
+
+          <div class="objective-actions">
+            <a href="#projects" class="btn btn-secondary">Explore My Projects</a>
+            <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Have an Idea for a Mobile App?</h2>
+          <p class="section-subtitle">
+            Let's bring your design to life with Flutter. Whether you need a mobile UI implemented or help building an interactive application interface, I'm ready to discuss your project.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Column -->
+          <div class="contact-info-col reveal">
+            <h3 class="contact-col-heading">Let's Work Together</h3>
+            <p class="contact-col-intro">
+              I am interested in opportunities with startups, small businesses, design studios, and engineering teams seeking a dedicated Junior Flutter Developer.
+            </p>
+
+            <div class="contact-methods-list">
+              <!-- Email -->
+              <a href="mailto:raniaezzat135@gmail.com" class="contact-method-card">
+                <div class="method-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">Direct Email</span>
+                  <span class="method-value">raniaezzat135@gmail.com</span>
+                </div>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/rania-ahmed-cs" target="_blank" rel="noopener noreferrer" class="contact-method-card">
+                <div class="method-icon-box">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">LinkedIn</span>
+                  <span class="method-value">linkedin.com/in/rania-ahmed-cs</span>
+                </div>
+              </a>
+
+              <!-- GitHub -->
+              <a href="https://github.com/RaniaAhmed1" target="_blank" rel="noopener noreferrer" class="contact-method-card">
+                <div class="method-icon-box">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">GitHub</span>
+                  <span class="method-value">github.com/RaniaAhmed1</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-col reveal reveal-delay-1">
+            <div class="form-wrapper">
+              <h3 class="form-card-title">Send a Message</h3>
+              <p class="form-card-sub">
+                Fill out the form below to initiate a project inquiry.
+              </p>
+
+              <!-- Honest Frontend Form Notice -->
+              <div class="form-honest-banner" role="note">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                <span>Frontend Demo: Submitting will prepare a direct email draft to <strong>raniaezzat135@gmail.com</strong>.</span>
+              </div>
+
+              <form id="contact-form" class="contact-form" novalidate>
+                <!-- Name Field -->
+                <div class="form-group">
+                  <label for="form-name" class="form-label">Your Name <span class="required">*</span></label>
+                  <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. Sarah Jenkins" required autocomplete="name">
+                  <span class="form-error-msg" id="name-error">Please enter your name.</span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                  <label for="form-email" class="form-label">Your Email <span class="required">*</span></label>
+                  <input type="email" id="form-email" name="email" class="form-input" placeholder="e.g. sarah@example.com" required autocomplete="email">
+                  <span class="form-error-msg" id="email-error">Please enter a valid email address.</span>
+                </div>
+
+                <!-- Subject Field -->
+                <div class="form-group">
+                  <label for="form-subject" class="form-label">Subject <span class="required">*</span></label>
+                  <input type="text" id="form-subject" name="subject" class="form-input" placeholder="e.g. Figma to Flutter Project Inquiry" required>
+                  <span class="form-error-msg" id="subject-error">Please enter a message subject.</span>
+                </div>
+
+                <!-- Message Field -->
+                <div class="form-group">
+                  <label for="form-message" class="form-label">Message <span class="required">*</span></label>
+                  <textarea id="form-message" name="message" class="form-textarea" rows="5" placeholder="Tell me about your mobile app project or screens you'd like implemented..." required></textarea>
+                  <span class="form-error-msg" id="message-error">Please write a brief message (minimum 10 characters).</span>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary btn-block submit-btn" id="submit-btn">
+                  <span class="btn-text">Send Message</span>
+                  <svg class="btn-send-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </form>
+
+              <!-- Submission Feedback Modal/Alert -->
+              <div id="form-feedback" class="form-feedback-box" hidden aria-live="polite">
+                <div class="feedback-icon success">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <h4 class="feedback-title">Thank you for reaching out!</h4>
+                <p class="feedback-text">
+                  Since this is a client-side portfolio without a backend server, your message was formatted into an email draft. You can launch your mail client now or copy the contents:
+                </p>
+                <div class="feedback-actions">
+                  <a id="feedback-mailto-link" href="#" class="btn btn-sm btn-primary">Open in Email Client</a>
+                  <button id="feedback-copy-btn" class="btn btn-sm btn-secondary" type="button">Copy Draft to Clipboard</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <!-- Footer Top / Brand Column -->
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="logo" aria-label="Rania Ahmed Home">
+            <span class="logo-bracket">&lt;</span><span class="logo-name">RA</span><span class="logo-bracket">/&gt;</span>
+          </a>
+          <p class="footer-tagline">
+            Junior Flutter Developer | Turning Ideas into Mobile Experiences.
+          </p>
+          <p class="footer-subtext">
+            Third-year student at Assiut University, Faculty of Computers &amp; Information.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links-group">
+          <h4 class="footer-col-title">Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Connections -->
+        <div class="footer-links-group">
+          <h4 class="footer-col-title">Connect</h4>
+          <ul class="footer-social-list">
+            <li>
+              <a href="https://github.com/RaniaAhmed1" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                <span>GitHub (RaniaAhmed1)</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/rania-ahmed-cs" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                <span>LinkedIn Profile</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:raniaezzat135@gmail.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>raniaezzat135@gmail.com</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> Rania Ahmed. Built with clean HTML5, CSS3, &amp; Vanilla JavaScript.
+        </p>
+        <a href="#home" class="back-to-top" aria-label="Back to top of page">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="floating-back-to-top" class="floating-top-btn" type="button" aria-label="Back to top of page" title="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- JavaScript File -->
+  <script src="js/script.js"></script>
+</body>
+</html>
